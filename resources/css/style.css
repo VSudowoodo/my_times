@@ -3,7 +3,7 @@ body { /* basic reset */
   margin: 0;
   box-sizing: border-box;
 }
-
+/* header */
 #header {
   width: 100%;
   height: 80px;
@@ -16,7 +16,7 @@ body { /* basic reset */
   font-size: 14px;
   font-weight: bold;
 }
-
+/* logo */
 #logo {
   display: flex;
   align-items: center;
@@ -43,4 +43,41 @@ body { /* basic reset */
 
 #header a {
   color: #000;
+}
+/* main content */
+#main,
+.column.large,
+.column.medium,
+.column.small {
+  border: 3px solid #000;
+}
+
+#main {
+  position: relative;
+  top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.column.large {
+  width: 630px;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
+
+.column.large, .column.medium, .column.small {
+  margin-right: 32px;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.column.small img {
+  width: 240px;
+  height: 240px;
 }
