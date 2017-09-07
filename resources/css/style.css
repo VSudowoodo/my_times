@@ -37,23 +37,25 @@ body { /* basic reset */
   padding-right: 40px;
 }
 
-#header nav span {
+nav span {
   display: inline-block;
   padding: 20px 10px;
 }
 
-#header a {
+a {
   color: #000;
 }
 /* main content */
-#main,
+/*#main,
 .column.large,
 .column.medium,
-.column.small {
+.column.small,
+#footer {
   border: 1px solid #000;
-}
+}*/
 
 #main {
+  margin-bottom: 80px;
   position: relative;
   top: 80px;
   display: flex;
@@ -78,11 +80,25 @@ body { /* basic reset */
   text-align: center;
 }
 
+.column.small span {
+  background-color: WhiteSmoke;
+  font-family: Verdana, sans-serif;
+  font-size: 12px;
+  color: DimGray;
+  border-bottom: 1px solid #000;
+  display: block;
+  padding: 11px 20px;
+}
+
 .column.large, .column.medium, .column.small {
   margin-right: 32px;
   display: inline-flex;
   flex-direction: column;
 }
+
+/*.story {
+  display: flex;
+}*/
 
 .story p{
   font-family: Georgia, sans-serif;
@@ -91,7 +107,10 @@ body { /* basic reset */
 }
 
 .story-graphic {
+  height: 300px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .story-graphic span {
@@ -103,14 +122,43 @@ body { /* basic reset */
   background-image: url("../images/story-main.png");
 }
 
-#earth {
+#lead span {
+  font-size: 40px;
+}
 
+#earth {
+  background-image: url("../images/story-earth.png");
 }
 
 #cameras {
-
+  background-image: url("../images/story-cameras.png");
 }
 
 #cat {
+  background-image: url("../images/story-cat.png");
+}
 
+#footer {
+  height: 325px;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana, sans-serif;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#footer nav {
+  display: inline-block;
+  padding-left: 25px;
+}
+
+#title {
+  font: bold 16px Georgia, sans-serif;
+  color: #fff;
+  padding-right: 25px;
+  border-right: 2px solid #fff;
+  display: inline-block;
 }
