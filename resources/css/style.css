@@ -55,7 +55,8 @@ a {
 }*/
 
 #main {
-  margin-bottom: 80px;
+  padding-top: 35px;
+  margin-bottom: 160px;
   position: relative;
   top: 80px;
   display: flex;
@@ -68,6 +69,7 @@ a {
 
 .column.medium {
   width: 300px;
+  flex-shrink: 0;
 }
 
 .column.small {
@@ -78,6 +80,7 @@ a {
   /*font-size: 16px;*/
   font-weight: bold;
   text-align: center;
+  margin-bottom: 38px;
 }
 
 .column.small span {
@@ -96,9 +99,9 @@ a {
   flex-direction: column;
 }
 
-/*.story {
-  display: flex;
-}*/
+.story h2 {
+  font: bold 30px Georgia, sans-serif;
+}
 
 .story p{
   font-family: Georgia, sans-serif;
@@ -124,6 +127,18 @@ a {
 
 #lead span {
   font-size: 40px;
+  margin-left: 20px;
+}
+
+#secondary {
+  display: flex;
+  justify-content: space-between;
+}
+
+#secondary .story {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
 }
 
 #earth {
@@ -136,6 +151,10 @@ a {
 
 #cat {
   background-image: url("../images/story-cat.png");
+}
+
+#earth span, #cameras span, #cat span {
+  text-align: center;
 }
 
 #footer {
